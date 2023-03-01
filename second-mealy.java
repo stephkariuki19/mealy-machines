@@ -208,3 +208,24 @@ static StringBuilder comparisonString = new StringBuilder();//correct?
 }
 
 }
+
+import com.amigos.Main;
+import com.amigos.WrongChoiceException;
+
+import static org.junit.Assert.*;
+
+public class MainTest {
+    @org.junit.Test
+    public void pickingProgramOne() throws WrongChoiceException {
+        assertEquals(1,Main.checkChoice("1"));
+    }
+    @org.junit.Test
+    public void pickingProgramTwo() throws WrongChoiceException {
+       assertEquals(2,Main.checkChoice("2"));
+    }
+
+    @org.junit.Test
+    public void WrongInput() throws WrongChoiceException {
+        
+    }
+}
